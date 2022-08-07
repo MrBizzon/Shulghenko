@@ -12,5 +12,5 @@ if (namber < 0)
 }
 else
 {
-        Console.WriteLine("Веден ноль");
+    Console.WriteLine("Веден ноль");
 }
