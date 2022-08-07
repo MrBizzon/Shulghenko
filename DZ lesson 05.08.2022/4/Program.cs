@@ -1,4 +1,6 @@
-﻿// Homework number 4
+﻿// Homework number 4. Напишите программу, которая на вход принимает число (N), 
+// а на выходе показывает все чётные числа от 1 до N
+
 Console.WriteLine("Enter a positive number:");
 int Number = Convert.ToInt32(Console.ReadLine());
 int i = 1;
