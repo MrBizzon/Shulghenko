@@ -22,15 +22,11 @@ if (numbers == 4)
    Console.WriteLine("Четверг");
 }
 
-if (numbers > 7)
+if (numbers > 7 || numbers < 1)
 {
-   Console.WriteLine("Хрен тебе");
+   Console.WriteLine("Введите число от 1 до 7);
 }
 
-if (numbers < 1)
-{
-   Console.WriteLine("Хрен тебе, убейся");
-}
 
 // else
 // {
