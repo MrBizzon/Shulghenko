@@ -8,4 +8,6 @@ int numberthird = int.Parse(Console.ReadLine());
 int max = nuamberFirst;
 if (numberSecond > max)max = numberSecond;
 if (numberthird > max)max = numberthird;
-Console.WriteLine("Maximum number " + max);
+{
+   Console.WriteLine("Maximum number " + max);
+}
