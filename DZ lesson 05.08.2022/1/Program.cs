@@ -2,9 +2,9 @@
 // какое число большее, а какое меньшее.
 
 Console.WriteLine("Enter the first number");
-int nuamberFirst = int.Parse(Console.ReadLine());
+int nuamberFirst = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter the second number");
-int numberSecond = int.Parse(Console.ReadLine());
+int numberSecond = Convert.ToInt32(Console.ReadLine());
 if (numberSecond > nuamberFirst)
 {
     Console.WriteLine("A large number is " + numberSecond);
