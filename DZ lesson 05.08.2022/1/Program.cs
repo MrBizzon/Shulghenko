@@ -1,9 +1,9 @@
 ﻿// Homework number 1. Напишите программу, которая на вход принимает два числа и выдаёт, 
 // какое число большее, а какое меньшее.
 
-Console.WriteLine("Enter the first number");
+Console.WriteLine("Enter the first number:");
 int nuamberFirst = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter the second number");
+Console.WriteLine("Enter the second number:");
 int numberSecond = Convert.ToInt32(Console.ReadLine());
 if (numberSecond > nuamberFirst)
 {
