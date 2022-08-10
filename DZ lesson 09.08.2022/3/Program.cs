@@ -9,4 +9,3 @@ string[] week = new string[] { "Понедельник", "Вторник", "Ср
 if (number <= week.Length - 2) Console.WriteLine($"{week[number - 1]} является рабочим днем");
 if (number > week.Length -2 && number <= week.Length) Console.WriteLine($"{week[number - 1]} - это выходной");
 if (number > week.Length) Console.WriteLine("Не надо хулиганить");
-
