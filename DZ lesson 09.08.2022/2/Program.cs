@@ -8,10 +8,10 @@ if (number < 100 && number > 0)
     Console.WriteLine("Введенное число двузначное, третья цифра отсутствует");
 if (number > 99)
 {
-    string str = number.ToString();
-    for (int i = 0; i < str.Length; i++)
+    string doc = number.ToString();
+    for (int i = 0; i < doc.Length; i++)
     {
         if (i == 2)
-            Console.Write($"Третьей цифрой числа {number} является {str[i]}");
+            Console.Write($"Третьей цифрой числа {number} является {doc[i]}");
     }
 }
