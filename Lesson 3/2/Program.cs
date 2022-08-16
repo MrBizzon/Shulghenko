@@ -15,7 +15,7 @@ double bx = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите третью координату:");
 double ay = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine("Введите четвертую координату:");
+    Console.WriteLine("Введите четвертую координату:");
 double by = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine($"Чертова дистанция равна: {MyDistans(ax, bx, ay, by)}");
