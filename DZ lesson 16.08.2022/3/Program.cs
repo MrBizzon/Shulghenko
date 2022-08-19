@@ -6,7 +6,7 @@ int[] MyArray = new int[8];
 
 Random array = new Random();
 for (int i = 0; i < MyArray.Length; i++)
-    MyArray[i] = array.Next(-1000, 1000);
+    MyArray[i] = array.Next(-9999, 9999);
 var str = string.Join(" ", MyArray);
 
 Console.WriteLine("[{0}]", string.Join(", ", MyArray));
