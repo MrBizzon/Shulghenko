@@ -19,9 +19,9 @@ for (int a = 0; a < registry.Length; a++)
 
 void random(double[] registry)
 {
-    for (int i = 0; i < registry.Length; i++)
+    for (int b = 0; b < registry.Length; b++)
     {
-        registry[i] = Convert.ToDouble(new Random().Next(100, 1000)) / 100;
+        registry[b] = Convert.ToDouble(new Random().Next(100, 1000)) / 100;
     }
 }
 
