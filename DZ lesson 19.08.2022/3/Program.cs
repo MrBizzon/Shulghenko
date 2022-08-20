@@ -1,4 +1,5 @@
 ﻿// Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементами массива.
+// [3 7 22 2 78] -> 76
 
 double[] registry = new double[5];
 random(registry);
@@ -11,6 +12,7 @@ for (int a = 0; a < registry.Length; a++)
     {
         max = registry[a];
     }
+
     if (registry[a] < min)
     {
         min = registry[a];
