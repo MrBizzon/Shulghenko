@@ -8,7 +8,7 @@
 
 int[,] array = new int[3, 4];
 
-void Random(int[,] array)
+void random(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
 
@@ -26,7 +26,7 @@ void Random(int[,] array)
         }
     }
 }
-Random(array);
+random(array);
 
 void sumElements(int[,] array)
 {

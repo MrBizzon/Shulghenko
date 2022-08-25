@@ -6,7 +6,7 @@ Console.WriteLine($"Какое количество чисел вы желает
 int M = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[M];
 
-void InputNuMbers(int M)
+void inputNuMbers(int M)
 {
     for (int i = 0; i < M; i++)
     {
@@ -15,7 +15,7 @@ void InputNuMbers(int M)
     }
 }
 
-int Input(int M)
+int input(int M)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -24,6 +24,6 @@ int Input(int M)
     }   
         return count;
 }
-Input(M);
-InputNuMbers(M);
-Console.WriteLine($"Введено положительных чисел: {Input(M)}");
+input(M);
+inputNuMbers(M);
+Console.WriteLine($"Введено положительных чисел: {input(M)}");
