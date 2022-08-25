@@ -12,10 +12,12 @@ for (int a = 0; a < registry.Length; a++)
 
 void random(int[] registry)
 {
-    for (int b = 0; b < registry.Length; b++)
+    for (int i = 0; i < registry.Length; i++)
     {
-        registry[b] = new Random().Next(100, 1000);
+        registry[i] = new Random().Next(100, 1000);
     }
 }
-Console.WriteLine("[{0}]", string.Join(", ", registry));
+string str2 = string.Format("[{0}]", string.Join(", ", registry));
+Console.WriteLine(str2);
+// Console.WriteLine("[{0}]", string.Join(", ", registry));
 Console.WriteLine($"Из {registry.Length}-и случайных чисел {counter} чётные");
