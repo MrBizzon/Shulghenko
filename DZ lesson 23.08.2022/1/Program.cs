@@ -4,23 +4,23 @@
 
 Console.WriteLine($"Какое количество чисел вы желаете ввести?");
 int M = Convert.ToInt32(Console.ReadLine());
-int[] arr = new int[M];
+int[] array = new int[M];
 
 void InputNuMbers(int M)
 {
     for (int i = 0; i < M; i++)
     {
         Console.WriteLine($"Введите {i + 1}-ю цифру: ");
-        arr[i] = Convert.ToInt32(Console.ReadLine());
+        array[i] = Convert.ToInt32(Console.ReadLine());
     }
 }
 
 int Input(int M)
 {
     int count = 0;
-    for (int i = 0; i < arr.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        if (arr[i] > 0) count++;
+        if (array[i] > 0) count++;
     }   
         return count;
 }

@@ -34,6 +34,6 @@ void sumElements(int[,] array)
     for (int i = 0; i < array.GetLength(0); i++)
         sum += array[i, i];
     Console.WriteLine();
-    Console.WriteLine("Сумма элементов на главной диагонале равна {0}", sum);
+    Console.WriteLine($"Сумма элементов на главной диагонале равна {sum}");
 }
 sumElements(array);

@@ -21,14 +21,14 @@ void inputCoefficients()
     }
 }
 
-double[] Equation(double[,] ratio)
+double[] equation(double[,] ratio)
 {
     intersection[0] = (ratio[1, 1] - ratio[0, 1]) / (ratio[0, 0] - ratio[1, 0]);
     intersection[1] = intersection[0] * ratio[0, 0] + ratio[0, 1];
     return intersection;
 }
 
-void OutputSolution(double[,] ratio)
+void outputSolution(double[,] ratio)
 {
     if (ratio[0, 0] == ratio[1, 0] && ratio[0, 1] == ratio[1, 1])
     {
@@ -36,10 +36,10 @@ void OutputSolution(double[,] ratio)
     }
     else
     {
-        Equation(ratio);
+        equation(ratio);
         Console.WriteLine($"Прямые пересекуться в точке с координатами: \n{intersection[0]:F2}, {intersection[1]:F2}");
     }
 }
 
 inputCoefficients();
-OutputSolution(ratio);
+outputSolution(ratio);
