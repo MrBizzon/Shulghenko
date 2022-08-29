@@ -9,7 +9,7 @@ Console.Write("Введите любое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int[,] array = new int[4, 4];
 
-void randomNumbers(int[,] array)
+void RandomNumbers(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -21,9 +21,9 @@ void randomNumbers(int[,] array)
         Console.WriteLine();
     }
 }
-randomNumbers(array);
+RandomNumbers(array);
 
-int[] numbersSearch(int[,] arr, int number)
+int[] NumbersSearch(int[,] arr, int number)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
@@ -39,17 +39,17 @@ int[] numbersSearch(int[,] arr, int number)
     return null;
 }
 
-void printArray(int[] arr)
+void PrintArray(int[] arr)
 {
     Console.WriteLine("[{0}]", string.Join(", ", arr));
 }
 
-int[] index = numbersSearch(array, number);
+int[] index = NumbersSearch(array, number);
 
 if (index != null)
 {
     Console.Write($"Число {number} находится в массиве под индексами: ");
-    printArray(index);
+    PrintArray(index);
 }
 else
 {

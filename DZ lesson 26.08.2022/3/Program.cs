@@ -7,7 +7,7 @@
 
 int[,] array = new int[4, 4];
 
-void randomNumbers(int[,] array)
+void RandomNumbers(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -19,7 +19,7 @@ void randomNumbers(int[,] array)
         Console.WriteLine();
     }
 }
-randomNumbers(array);
+RandomNumbers(array);
 
 Console.WriteLine("Среднее арифметическое каждого столбца: ");
 
