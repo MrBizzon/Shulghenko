@@ -11,7 +11,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 
 double[,] array = new double[m, n];
 
-void RandomNumbers(double[,] array)
+void randomNumbers(double[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -23,4 +23,4 @@ void RandomNumbers(double[,] array)
         Console.WriteLine();
     }
 }
-RandomNumbers(array);
+randomNumbers(array);
