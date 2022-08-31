@@ -15,7 +15,7 @@ Console.Write("Введите количество столбцов: ");
 int NumberOfColumns = Convert.ToInt32(Console.ReadLine());
 int[,] numbers = new int[NumberOfRows, NumberOfColumns];
 
-Console.WriteLine("\nРандомный массив");
+Console.WriteLine("\nРандомный массив: ");
 
 void NumberGenerator(int[,] numbers)
 {
@@ -59,5 +59,5 @@ for (int i = 0; i < numbers.GetLength(0); i++)
     }
 }
 Console.WriteLine();
-Console.WriteLine("\nОтсортированный массив");
+Console.WriteLine("\nОтсортированный массив: ");
 PrintingNumbers(numbers);
