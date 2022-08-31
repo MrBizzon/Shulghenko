@@ -5,8 +5,13 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-int[,] array = new int[4, 4];
+Console.Write("Введите количество строк: ");
+int NumberOfRows = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите количество столбцов: ");
+int NumberOfColumns = Convert.ToInt32(Console.ReadLine());
+int[,] array = new int[NumberOfRows, NumberOfColumns];
 
+Console.WriteLine();
 void RandomNumbers(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -20,7 +25,7 @@ void RandomNumbers(int[,] array)
     }
 }
 RandomNumbers(array);
-
+Console.WriteLine();
 Console.WriteLine("Среднее арифметическое каждого столбца: ");
 
 for (int j = 0; j < array.GetLength(1); j++)

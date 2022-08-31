@@ -5,11 +5,12 @@
 // 8 7,8 -7,1 9
 
 Console.Write("Введите количество строк: ");
-int m = Convert.ToInt32(Console.ReadLine());
+int NumberOfRows = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество столбцов: ");
-int n = Convert.ToInt32(Console.ReadLine());
+int NumberOfColumns = Convert.ToInt32(Console.ReadLine());
+int[,] numbers = new int[NumberOfRows, NumberOfColumns];
 
-double[,] array = new double[m, n];
+double[,] array = new double[NumberOfRows, NumberOfColumns];
 
 void RandomNumbers(double[,] array)
 {
