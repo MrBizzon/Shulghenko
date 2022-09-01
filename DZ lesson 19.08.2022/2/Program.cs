@@ -10,16 +10,6 @@ int[] registry = new int[j];
 random(registry);
 sum(registry);
 
-// for (int i = 0; i < registry.Length; i++)
-// {
-//     int counter = 0;
-
-//     {
-//         if (registry[i] % 2 != 0)
-//             counter++;
-//     }
-// }
-
 void random(int[] registry)
 {
     for (int i = 0; i < registry.Length; i++)

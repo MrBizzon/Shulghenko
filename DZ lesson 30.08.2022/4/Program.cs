@@ -6,18 +6,18 @@
 // 27(1,0,0) 90(1,0,1)
 // 26(1,1,0) 55(1,1,1)
 
-int size1 = InputInt("Введите размерность 1: ");
-int size2 = InputInt("Введите размерность 2: ");
-int size3 = InputInt("Введите размерность 3: ");
+int a = InputInt("Введите размерность 1: ");
+int b = InputInt("Введите размерность 2: ");
+int c = InputInt("Введите размерность 3: ");
 int count = 124;
 
-if (size1 * size2 * size3 > count)
+if (a * b * c > count)
 {
     Console.Write("Задайте меньшую размерность");
     return;
 }
 
-int[,,] result = CreatingThreeDimensionalArray(size1, size2, size3);
+int[,,] result = CreatingThreeDimensionalArray(a, b, c);
 
 for (int i = 0; i < result.GetLength(0); i++)
 {
@@ -32,20 +32,20 @@ for (int i = 0; i < result.GetLength(0); i++)
     Console.WriteLine();
 }
 
-int[,,] CreatingThreeDimensionalArray(int size1, int size2, int size3)
+int[,,] CreatingThreeDimensionalArray(int number1, int number2, int number3)
 {
-    int[,,] randomArray = new int[size1, size2, size3];
-    int[] meaning = new int[count];
-    int number = 10;
-    for (int i = 0; i < meaning.Length; i++)
-        meaning[i] = number++;
+    int[,,] randomArray = new int[number1, number2, number3];
+    int[] num = new int[count];
+    int counter = 10;
+    for (int i = 0; i < num.Length; i++)
+        num[i] = counter++;
 
-    for (int i = 0; i < meaning.Length; i++)
+    for (int i = 0; i < num.Length; i++)
     {
-        int randomInd = new Random().Next(0, meaning.Length);
-        int temp = meaning[i];
-        meaning[i] = meaning[randomInd];
-        meaning[randomInd] = temp;
+        int random = new Random().Next(0, num.Length);
+        int temp = num[i];
+        num[i] = num[random];
+        num[random] = temp;
     }
 
     int valueIndex = 0;
@@ -56,7 +56,7 @@ int[,,] CreatingThreeDimensionalArray(int size1, int size2, int size3)
         {
             for (int k = 0; k < randomArray.GetLength(2); k++)
             {
-                randomArray[i, j, k] = meaning[valueIndex++];
+                randomArray[i, j, k] = num[valueIndex++];
             }
         }
     }

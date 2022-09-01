@@ -4,7 +4,7 @@
 
 int[] MyArray = new int[8];
 
-// Random array = new Random();
+Random array = new Random();
 for (int i = 0; i < MyArray.Length; i++)
     MyArray[i] = array.Next(-9999, 9999);
 // var str = string.Join(" ", MyArray);

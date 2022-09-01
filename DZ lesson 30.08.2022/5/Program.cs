@@ -5,9 +5,7 @@
 // 11 16 15 06
 // 10 09 08 07
 
-Console.Write("Введите размер массива: ");
-int arraySize = Convert.ToInt32(Console.ReadLine());
-
+int arraySize = 4;
 int[,] namber = new int[arraySize, arraySize];
 
 int i = 0;
@@ -25,9 +23,6 @@ for (int count = 1; count <= arraySize * arraySize; ++count)
     else
         --i;
 }
-
-Console.WriteLine();
-Console.WriteLine("Массив заполнен спирально:");
 
 void PrintingNumbers(int[,] array)
 {
