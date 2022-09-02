@@ -40,7 +40,7 @@ Console.WriteLine();
 void SumOfLines(int[,] arr)
 {
     int index = 0,
-        minimum = 0;
+        mininum = 0;
     for (int i = 0; i < arr.GetLength(0); i++)
     {
         int count = 0;
@@ -50,16 +50,16 @@ void SumOfLines(int[,] arr)
         }
         if (i == 0)
         {
-            minimum = count;
+            mininum = count;
         }
-        else if (count < minimum)
+        else if (count < mininum)
         {
-            minimum = count;
+            mininum = count;
             index = i;
         }
     }
 
-    Console.WriteLine($"\nНа {index + 1}-й строке находится минимальная сумма элементов: {minimum}");
+    Console.WriteLine($"\nНа {index + 1}-й строке находится минимальная сумма элементов: {mininum}");
 }
 
 SumOfLines(namber);

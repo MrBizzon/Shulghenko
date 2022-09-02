@@ -7,9 +7,9 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-if (m == n)
+if (m >= n)
 {
-    Console.WriteLine("\nПервое число не должно равняться второму\n");
+    Console.WriteLine("\nВторое число должно быть больше первого\n");
 }
 else
 {
@@ -20,10 +20,10 @@ else
     {
         if (i >= n)
             return;
+
         i++;
         Size(m, n);
     }
-
     sum = (m + n) * (n - m + 1) / 2;
 
     Console.Write($"Сумма чисел в промежутке от {m} до {n} = ");
