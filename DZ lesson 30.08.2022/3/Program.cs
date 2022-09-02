@@ -13,7 +13,7 @@ int[,] matrix2 = new int[arrayString, arrayString];
 int EnteringANumber(string result)
 {
     Console.Write(result);
-    return int.Parse(Console.ReadLine());
+    return Convert.ToInt32(Console.ReadLine());
 }
 
 void NumberGenerator(int[,] numbers)

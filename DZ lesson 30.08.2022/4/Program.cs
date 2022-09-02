@@ -66,5 +66,5 @@ int[,,] CreatingThreeDimensionalArray(int number1, int number2, int number3)
 int InputInt(string output)
 {
     Console.Write(output);
-    return int.Parse(Console.ReadLine());
+    return Convert.ToInt32(Console.ReadLine());
 }
